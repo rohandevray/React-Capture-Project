@@ -47,3 +47,5 @@ export default App;
 
 //exitBeforeEnter : this property gonna make one page to fade out then allows the other page to fade in .
 //it make the animation effect to wait
+
+//adding text to check can i push changes to github via github
