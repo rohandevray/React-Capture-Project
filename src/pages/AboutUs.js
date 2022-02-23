@@ -6,6 +6,7 @@ import FaqSection from "../components/FaqSection";
 //ANimations
 import { motion } from "framer-motion";
 import { pageTransition } from "../Animation";
+import ScrollTop from "../components/SrcrollTop";
 const AboutUs = () => {
   return (
     <motion.div
@@ -18,6 +19,7 @@ const AboutUs = () => {
       <AboutSection />
       <ServicesSection />
       <FaqSection />
+      <ScrollTop />
     </motion.div>
   );
 };

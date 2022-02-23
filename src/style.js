@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const About = styled.div`
+export const About = styled(motion.div)`
   //here we can write our normal css
   min-height: 90vh;
   display: flex;
@@ -8,6 +9,11 @@ export const About = styled.div`
   justify-content: space-between;
   padding: 2rem 8rem;
   color: white;
+  @media (max-width: 856px) {
+    display: block;
+    text-align: center;
+    padding: 2rem 2rem;
+  }
 `;
 
 export const Description = styled.div`
@@ -16,6 +22,12 @@ export const Description = styled.div`
   padding-right: 5rem;
   h2 {
     font-weight: lighter;
+  }
+  @media (max-width: 856px) {
+    padding: 0;
+    button {
+      margin: 2rem 0 5rem 0;
+    }
   }
 `;
 

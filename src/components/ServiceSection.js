@@ -8,10 +8,19 @@ import home2 from "../img/home2.png";
 //importing styles from style.js file
 import { About, Description, Image } from "../style";
 import styled from "styled-components";
+import { Fade } from "../Animation";
+import { useScroll } from "./useScroll";
+import { scrollReveal } from "../Animation";
 
 const ServicesSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <Services>
+    <Services
+      ref={element}
+      variants={(Fade, scrollReveal)}
+      animate={controls}
+      initial="hidden"
+    >
       <Description>
         <h2>
           High <span>quality</span> services
@@ -72,6 +81,9 @@ const Services = styled(About)`
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 856px) {
+    justify-content: center;
+  }
 `;
 const Card = styled.div`
   flex-basis: 15rem;
@@ -85,6 +97,10 @@ const Card = styled.div`
       background: white;
       color: black;
     }
+  }
+  @media (max-width: 856px) {
+    margin: 5px;
+    width: 70%;
   }
 `;
 export default ServicesSection;

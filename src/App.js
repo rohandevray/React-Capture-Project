@@ -17,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
+
       <Nav />
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
@@ -49,3 +50,5 @@ export default App;
 //it make the animation effect to wait
 
 //adding text to check can i push changes to github via github
+
+//Scroll top is to go to top whnever we click on any different page/Section/pathname/url ..

@@ -15,8 +15,12 @@ import {
   lineAnim,
   slider,
 } from "../Animation";
+import { useScroll } from "../components/useScroll";
+import ScrollTop from "../components/SrcrollTop";
 
 const OurWork = () => {
+  const [element, controls] = useScroll();
+  const [element2, controls2] = useScroll();
   return (
     <Work
       style={{ background: "#fff" }}
@@ -41,20 +45,26 @@ const OurWork = () => {
           </Hide>
         </Link>
       </Movie>
-      <Movie>
+      <Movie variants={Fade} ref={element} initial="hidden" animate={controls}>
         <h2>The Racer</h2>
-        <div className="line"></div>
+        <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-racer">
           <img src={theracer} alt="theracer" />
         </Link>
       </Movie>
-      <Movie>
+      <Movie
+        variants={Fade}
+        ref={element2}
+        initial="hidden"
+        animate={controls2}
+      >
         <h2>Good Times</h2>
-        <div className="line"></div>
+        <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/good-times">
           <img src={goodtimes} alt="goodtimes" />
         </Link>
       </Movie>
+      <ScrollTop />
     </Work>
   );
 };
@@ -64,12 +74,15 @@ const Work = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden; //this is boz when we animate it should not behave weird
   padding: 1rem 8rem;
+  @media (max-width: 856px) {
+    padding: 2rem 2rem;
+  }
   h2 {
     padding: 1rem 0;
     color: black;
   }
 `;
-const Movie = styled.div`
+const Movie = styled(motion.div)`
   padding-bottom: 10rem;
   color: white;
   .line {

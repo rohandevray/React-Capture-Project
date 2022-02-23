@@ -9,9 +9,26 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    html{
+        @media (max-width:1500px){
+            font-size:80% ;
+        }
+        @media (max-width:1400px){
+            font-size:76% ;
+        }
+        @media (max-width:1000px){
+            font-size:70% ;
+        }
+        @media (max-width:856px){
+            font-size: 68%;
+        }
+        
+
+    }
    body{
     background: #1b1b1b;
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;//to remove the issue of right side space over body due to scacling up animation
      }
     button{
     cursor: pointer;
@@ -31,7 +48,7 @@ const GlobalStyle = createGlobalStyle`
   }
     h2{
     font-weight:lighter;
-    font-size: 3.6rem;
+    font-size: 3.6rem
     }
     h3{
     color: white;
@@ -56,6 +73,16 @@ const GlobalStyle = createGlobalStyle`
     font-size: 2rem;
 }
 
+::-webkit-scrollbar{
+    width: 9px;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(transparent,#23d997);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:linear-gradient(transparent,#D96ED4);
+}
 `;
 
 export default GlobalStyle;
