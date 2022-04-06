@@ -1,10 +1,10 @@
 import React from "react";
 //Importing icons
-import clock from "../img/clock.svg";
+import react from "../img/front.gif";
 import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
-import home2 from "../img/home2.png";
+import coding from "../img/codingp.jpg";
 //importing styles from style.js file
 import { About, Description, Image } from "../style";
 import styled from "styled-components";
@@ -23,42 +23,42 @@ const ServicesSection = () => {
     >
       <Description>
         <h2>
-          High <span>quality</span> services
+          My <span>Skills</span>
         </h2>
         <Cards>
           <Card>
             <div className="icon">
-              <img src={clock} alt="clock icon" />
-              <h3>Efficient</h3>
+              <img src={react} alt="clock icon" />
+              <h3>Front-End</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Experienced with ReactJS, Sass and Bootstrap</p>
           </Card>
 
           <Card>
             <div className="icon">
               <img src={teamwork} alt="team icon" />
-              <h3>Teamwork</h3>
+              <h3>Back-End</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Experienced with NodeJS,Express and MongoDB</p>
           </Card>
           <Card>
             <div className="icon">
               <img src={diaphragm} alt="dia icon" />
-              <h3>Diaphragm</h3>
+              <h3>Algorithms</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Learning Algorithms along with DS in C++</p>
           </Card>
           <Card>
             <div className="icon">
               <img src={money} alt="money icon" />
-              <h3>Affordable</h3>
+              <h3>Other Skills</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>C, C++, Javascript, Git, Hyper</p>
           </Card>
         </Cards>
       </Description>
       <Image>
-        <img src={home2} alt="homi icon" />
+        <img src={coding} alt="homi icon" />
       </Image>
     </Services>
   );

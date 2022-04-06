@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 //importing images
-import athlete from "../img/athlete-small.png";
-import theracer from "../img/theracer-small.png";
-import goodtimes from "../img/goodtimes-small.png";
+import ignite from "../img/pic1.jpg";
+import impres from "../img/impre.jpg";
+import musics from "../img/music.jpg";
 //ANimations
 import { motion } from "framer-motion";
 import {
@@ -37,19 +37,19 @@ const OurWork = () => {
       </motion.div>
 
       <Movie>
-        <motion.h2 variants={Fade}>The Athlete</motion.h2>
+        <motion.h2 variants={Fade}>Ignite Games</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-athlete">
           <Hide>
-            <motion.img variants={photoAnim} src={athlete} alt="athlete" />
+            <motion.img variants={photoAnim} src={ignite} alt="athlete" />
           </Hide>
         </Link>
       </Movie>
       <Movie variants={Fade} ref={element} initial="hidden" animate={controls}>
-        <h2>The Racer</h2>
+        <h2>Impresario</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-racer">
-          <img src={theracer} alt="theracer" />
+          <img src={impres} alt="theracer" />
         </Link>
       </Movie>
       <Movie
@@ -58,10 +58,10 @@ const OurWork = () => {
         initial="hidden"
         animate={controls2}
       >
-        <h2>Good Times</h2>
+        <h2>Music Player</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/good-times">
-          <img src={goodtimes} alt="goodtimes" />
+          <img src={musics} alt="goodtimes" />
         </Link>
       </Movie>
       <ScrollTop />

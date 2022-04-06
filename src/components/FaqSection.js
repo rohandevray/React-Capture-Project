@@ -17,40 +17,58 @@ const FaqSection = () => {
       initial="hidden"
     >
       <h2>
-        Any Questions <span>FAQ</span>
+        About <span> Me</span>
       </h2>
       <AnimateSharedLayout>
-        <Toggle title="How Do I Start?">
+        <Toggle title="Student at NITK">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores
-              voluptatibus eum necessitatibus disti.
+              Hi! I'm Rohan Kumar Pushpam, currently doing my B.Tech in
+              Electrical and Electronics Engineering at NIT Karnataka:
+              (2020-2024).
             </p>
+            <p>I am currently working as Web Developer in NITK Racing Club.</p>
+            <a href="https://www.nitk.ac.in/">NIT Karnataka</a>
           </div>
         </Toggle>
 
-        <Toggle title="Daily Schedule">
+        <Toggle title="Interests & Skills">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores
-              voluptatibus eum necessitatibus disti.
+              I have an interest in making websites and User Interface Designs.I
+              also like to solve maths and analytical problems.I also made many
+              websites namely Weatherapp, Newsletter, Blog-website, Voice
+              Recognition App and many more.
             </p>
+
+            <p>
+              I have a keen interest in Competitive Programming. To learn about
+              algorithms and to apply it in cp contests are the best parts of
+              it. I started it in my first year.
+            </p>
+            <a href="https://www.stopstalk.com/user/profile/LightYaGaMi96">
+              CP Handles
+            </a>
           </div>
         </Toggle>
 
-        <Toggle title="Different Payment Methods">
+        <Toggle title="Tools that I use">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores
-              voluptatibus eum necessitatibus disti.
+              I know C, C++, Javascript as a programming language. I am
+              currently learning Data Structures and Algorithms in C++.
             </p>
-          </div>
-        </Toggle>
+            <p>
+              I also well-familiar with ReactJs, NodeJs ,ExpressJs, JQuery,
+              Sass, MongoDB, Git n GitHub, Mongoose , Figma , Bootstrap, Latex.
+            </p>
 
-        <Toggle title="What Products do you offer">
+            <a href="https://github.com/rohandevray?tab=repositories">
+              GitHub Repositories
+            </a>
+          </div>
+        </Toggle>
+        {/* <Toggle title="What Products do you offer">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -58,7 +76,7 @@ const FaqSection = () => {
               voluptatibus eum necessitatibus disti.
             </p>
           </div>
-        </Toggle>
+        </Toggle> */}
       </AnimateSharedLayout>
     </Faq>
   );
@@ -67,7 +85,7 @@ const FaqSection = () => {
 const Faq = styled(About)`
   display: block;
   span {
-    display: block;
+    font-weight: lighter;
   }
 
   cursor: pointer;

@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 //importing animations
 import { titleAnim, Fade, photoAnim } from "../Animation";
 import Wave from "../components/Wave";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 const AboutSection = () => {
   return (
@@ -16,24 +17,35 @@ const AboutSection = () => {
       <EditDescription>
         <div className="title">
           <Hide>
-            <motion.h2 variants={titleAnim}>We work to make</motion.h2>
-          </Hide>
-          <Hide>
             <motion.h2 variants={titleAnim}>
-              your <span>dreams</span> come
+              Hi there<span>!</span>
             </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={titleAnim}>true.</motion.h2>
+            <motion.h2 variants={titleAnim}>
+              I'm <span>Rohan</span> Kumar
+            </motion.h2>
+          </Hide>
+          <Hide>
+            <motion.h2 variants={titleAnim}>Pushpam</motion.h2>
           </Hide>
         </div>
         <motion.p variants={Fade}>
-          Contact us for any photography or videography ideas that you have. We
-          have professionals with amazing skills
+          I'm a Full-Stack Web-Developer and a Programmer. I used to create
+          websites, UI designs and games sometimes.
         </motion.p>
-        <motion.button variants={Fade}>Contact us</motion.button>
-      </EditDescription>
 
+        <motion.button
+          variants={Fade}
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href =
+              "https://drive.google.com/file/d/1SLXARqz-ffpb0RMwT_BIRBff031s4sOZ/view?usp=sharing";
+          }}
+        >
+          RESUME
+        </motion.button>
+      </EditDescription>
       <Image>
         <motion.img variants={photoAnim} src={home1} alt="guy camera" />
       </Image>
