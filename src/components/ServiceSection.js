@@ -11,6 +11,13 @@ import styled from "styled-components";
 import { Fade } from "../Animation";
 import { useScroll } from "./useScroll";
 import { scrollReveal } from "../Animation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+import {
+  faReact,
+  faNodeJs,
+  faJsSquare,
+} from "@fortawesome/free-brands-svg-icons";
 
 const ServicesSection = () => {
   const [element, controls] = useScroll();
@@ -28,32 +35,34 @@ const ServicesSection = () => {
         <Cards>
           <Card>
             <div className="icon">
-              <img src={react} alt="clock icon" />
-              <h3>Front-End</h3>
+              <FontAwesomeIcon icon={faReact} size="2x" color="skyblue" />
+              <h3>FRONT-END</h3>
             </div>
             <p>Experienced with ReactJS, Sass and Bootstrap</p>
           </Card>
 
           <Card>
             <div className="icon">
-              <img src={teamwork} alt="team icon" />
-              <h3>Back-End</h3>
+              <FontAwesomeIcon icon={faNodeJs} size="2x" color="lightgreen" />
+              <h3>BACK-END</h3>
             </div>
             <p>Experienced with NodeJS,Express and MongoDB</p>
           </Card>
           <Card>
             <div className="icon">
-              <img src={diaphragm} alt="dia icon" />
-              <h3>Algorithms</h3>
+              <FontAwesomeIcon icon={faCode} size="2x" color="orange" />
+              <h3>ALGORITHMS</h3>
             </div>
             <p>Learning Algorithms along with DS in C++</p>
           </Card>
           <Card>
             <div className="icon">
-              <img src={money} alt="money icon" />
-              <h3>Other Skills</h3>
+              <FontAwesomeIcon icon={faJsSquare} size="2x" color="yellow" />
+              <h3>OTHER SKILLS</h3>
             </div>
-            <p>C, C++, Javascript, Git, Hyper</p>
+            <p>
+              C++, Hyper, Javascript, C, <br /> Git
+            </p>
           </Card>
         </Cards>
       </Description>
@@ -92,10 +101,11 @@ const Card = styled.div`
     display: flex;
     align-items: center;
     h3 {
-      margin-left: 1rem;
+      margin-left: 0rem;
       padding: 1rem;
-      background: white;
-      color: black;
+      color: white;
+      border: #23d997;
+      font-size: 1.3rem;
     }
   }
   @media (max-width: 856px) {

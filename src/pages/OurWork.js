@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 //importing images
 import ignite from "../img/pic1.jpg";
 import impres from "../img/impre.jpg";
-import musics from "../img/music.jpg";
+import musics from "../img/disk.jpg";
 //ANimations
 import { motion } from "framer-motion";
 import {
@@ -23,7 +23,7 @@ const OurWork = () => {
   const [element2, controls2] = useScroll();
   return (
     <Work
-      style={{ background: "#fff" }}
+      style={{ background: "black" }}
       exit="exit"
       variants={pageTransition}
       initial="hidden"
@@ -79,7 +79,7 @@ const Work = styled(motion.div)`
   }
   h2 {
     padding: 1rem 0;
-    color: black;
+    color: white;
   }
 `;
 const Movie = styled(motion.div)`

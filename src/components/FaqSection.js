@@ -27,7 +27,10 @@ const FaqSection = () => {
               Electrical and Electronics Engineering at NIT Karnataka:
               (2020-2024).
             </p>
-            <p>I am currently working as Web Developer in NITK Racing Club.</p>
+            <p>
+              I am currently working as a Web Developer in NITK Racing Club.
+            </p>
+
             <a href="https://www.nitk.ac.in/">NIT Karnataka</a>
           </div>
         </Toggle>
@@ -46,6 +49,7 @@ const FaqSection = () => {
               algorithms and to apply it in cp contests are the best parts of
               it. I started it in my first year.
             </p>
+
             <a href="https://www.stopstalk.com/user/profile/LightYaGaMi96">
               CP Handles
             </a>
@@ -59,8 +63,9 @@ const FaqSection = () => {
               currently learning Data Structures and Algorithms in C++.
             </p>
             <p>
-              I also well-familiar with ReactJs, NodeJs ,ExpressJs, JQuery,
-              Sass, MongoDB, Git n GitHub, Mongoose , Figma , Bootstrap, Latex.
+              I also well-familiar with React + Redux, NodeJs + ExpressJs,
+              JQuery, MySQL, MongoDB, Git n GitHub, Mongoose, Figma, Bootstrap,
+              Latex, SCSS, HTML5, CSS3.
             </p>
 
             <a href="https://github.com/rohandevray?tab=repositories">
@@ -68,15 +73,6 @@ const FaqSection = () => {
             </a>
           </div>
         </Toggle>
-        {/* <Toggle title="What Products do you offer">
-          <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores
-              voluptatibus eum necessitatibus disti.
-            </p>
-          </div>
-        </Toggle> */}
       </AnimateSharedLayout>
     </Faq>
   );
@@ -109,5 +105,10 @@ const Faq = styled(About)`
       padding: 1rem 0;
     }
   }
+  a {
+    text-decoration: none;
+    color: #23d997;
+  }
 `;
+
 export default FaqSection;

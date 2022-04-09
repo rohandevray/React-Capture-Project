@@ -32,7 +32,7 @@ const Nav = () => {
           />
         </li>
         <li>
-          <Link to="/contact">Contact Us</Link>
+          <Link to="/contact">Contact</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
