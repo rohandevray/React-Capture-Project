@@ -191,8 +191,30 @@ const Table = styled.div`
   width: 60%;
   position: absolute;
   left: 20%;
-
   height: 22rem;
+
+  @media (max-width: 1097px) {
+    display: flex;
+    flex-direction: column;
+
+    .right {
+      position: absolute;
+      bottom: -110%;
+      left: -11%;
+
+      textarea {
+        width: 100%;
+        position: relative;
+        left: 5%;
+      }
+    }
+
+    button {
+      position: absolute;
+      top: 100%;
+      left: 10%;
+    }
+  }
 
   .left {
     input {
@@ -257,6 +279,14 @@ const Foot = styled(motion.div)`
   width: 100%;
   text-align: center;
   transition: all 0.75s ease;
+  @media (max-width: 768px) {
+    position: absolute;
+    bottom: -2rem;
+    left: 5.1%;
+    a {
+      padding: 0 7px;
+    }
+  }
   h3 {
     padding-bottom: 0.5%;
     color: #23d997;

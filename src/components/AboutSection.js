@@ -1,5 +1,5 @@
 import React from "react";
-import home1 from "../img/home1.png";
+import home1 from "../img/finalme.jpg";
 //import styled
 import styled from "styled-components";
 //importing styles from style.js file what we need
@@ -9,7 +9,6 @@ import { motion } from "framer-motion";
 //importing animations
 import { titleAnim, Fade, photoAnim } from "../Animation";
 import Wave from "../components/Wave";
-import { Routes, Route, useLocation } from "react-router-dom";
 
 const AboutSection = () => {
   return (

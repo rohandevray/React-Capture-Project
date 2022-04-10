@@ -40,8 +40,8 @@ const FaqSection = () => {
             <p>
               I have an interest in making websites and User Interface Designs.I
               also like to solve maths and analytical problems.I also made many
-              websites namely Weatherapp, Newsletter, Blog-website, Voice
-              Recognition App and many more.
+              web applications namely Weather App, Newsletter, Blog-website,
+              Voice Recognition App and many more.
             </p>
 
             <p>
