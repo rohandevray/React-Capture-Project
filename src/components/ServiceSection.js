@@ -1,9 +1,5 @@
 import React from "react";
 //Importing icons
-import react from "../img/front.gif";
-import diaphragm from "../img/diaphragm.svg";
-import money from "../img/money.svg";
-import teamwork from "../img/teamwork.svg";
 import coding from "../img/codingp.jpg";
 //importing styles from style.js file
 import { About, Description, Image } from "../style";
@@ -60,9 +56,7 @@ const ServicesSection = () => {
               <FontAwesomeIcon icon={faJsSquare} size="2x" color="yellow" />
               <h3>OTHER SKILLS</h3>
             </div>
-            <p>
-              C++, Hyper, Javascript, C, <br /> Git
-            </p>
+            <p>C++, Python, Javascript, C, Hyper, Git</p>
           </Card>
         </Cards>
       </Description>
