@@ -59,7 +59,7 @@ const FaqSection = () => {
         <Toggle title="Tools that I use">
           <div className="answer">
             <p>
-              I know C, C++, Javascript as a programming language. I am
+              I know C, C++, Javascript, Python as a programming language. I am
               currently learning Data Structures and Algorithms in C++.
             </p>
             <p>
