@@ -39,7 +39,7 @@ const AboutSection = () => {
           onClick={(e) => {
             e.preventDefault();
             window.location.href =
-              "https://drive.google.com/file/d/1SLXARqz-ffpb0RMwT_BIRBff031s4sOZ/view?usp=sharing";
+              "https://drive.google.com/file/d/1OHG-9iBWLhLmh1pAAk3OvD5PM3NEo50C/view?usp=sharing";
           }}
         >
           RESUME
